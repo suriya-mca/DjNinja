@@ -12,8 +12,8 @@ async def home(request):
 
 @router.get("/pg")
 async def run(request):
-    conn = await asyncpg.connect(user='postgres', password='Fate1234',
-                                 database='postgres', host='127.0.0.1')
+    conn = await asyncpg.connect(user='****', password='****',
+                                 database='****', host='127.0.0.1')
     values = await conn.execute('''
         CREATE TABLE sample(
             id serial PRIMARY KEY,
